@@ -51,29 +51,41 @@ header {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap; 
+	width: 92%;
 }
 
 header h1 {
+	text-align: center;
 	margin: 0;
-	padding: 38px 0;
+	padding: 38px 0 0 0;
+	width: 100%;
 }
 header h1 span {
 	color: #77a466;
 }
 
+hr {
+	width: 80%;
+	height: 0.1em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #77a466;
+  }
+
 header nav {
-	padding: 46px 0;
+	padding: 20px 0;
 }
 header nav ul {
 	margin: 0;
 	padding: 0;
+	list-style-type:none;
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 0.875px;
-	padding: 0 10px;
-	display: inline;
+	font-size: 0.875em;
+	padding: 0 10px 1.5em;
+	width: 100%;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -83,7 +95,7 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
-	margin: 0 auto;
+	margin: 0 14px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -115,9 +127,10 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	height: auto;
 	border-top: 1px solid #eee;
+	justify-content: center;
 }
 
 .section-one h3 {
@@ -139,6 +152,7 @@ header nav ul li a{
 	padding: 0;
 }
 .menu li {
+	margin: 20px;
 	padding: 10px 0;
 	color:#77a466;
 }
@@ -169,4 +183,14 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875px;
+}
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+ 
+}
+ 
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+ 
 }
